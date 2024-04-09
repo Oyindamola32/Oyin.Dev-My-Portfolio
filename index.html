@@ -517,8 +517,11 @@
               </div>
             </div>
             <div class="right-contact"><br><br><br>
-              
-               
+              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">     
+                <p hidden aria-hidden="true"> 
+                <label>Don't fill out this input..<br> <input name="bot-field"/>
+                </label>
+                </p>
                
                 <div class="input-control i-c-2">
                   <input type="text"  id="name" name="firstname" placeholder="First Name" required/>
@@ -537,6 +540,7 @@
                 
 
                   &nbsp;&nbsp;<button type="submit">SEND MESSAGE</button>
+              </form>
             </div>
           </div>
         </div>
